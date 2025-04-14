@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7547,10 +7548,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"processed_data.csv"</span><span class="p">)</span>
 
@@ -7578,7 +7579,7 @@ a.anchor-link {
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7677,10 +7678,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'PriceCategory'</span><span class="p">,</span> <span class="s1">'cara_o_no'</span><span class="p">,</span> <span class="s1">'media_o_no'</span><span class="p">,</span> <span class="s1">'economica_o_no'</span><span class="p">])</span>
 
@@ -7762,12 +7763,12 @@ Name: proportion, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
-<span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
 <span class="n">model</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">'liblinear'</span><span class="p">)</span>
 
@@ -7802,7 +7803,7 @@ Desviación estándar: 0.0034
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[25]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7962,13 +7963,13 @@ Desviación estándar: 0.0034
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
-<span class="kn">from</span> <span class="nn">statsmodels.stats.outliers_influence</span> <span class="kn">import</span> <span class="n">variance_inflation_factor</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sm</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.stats.outliers_influence</span><span class="w"> </span><span class="kn">import</span> <span class="n">variance_inflation_factor</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">vif_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
 <span class="n">vif_df</span><span class="p">[</span><span class="s2">"Variable"</span><span class="p">]</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span>
@@ -8027,8 +8028,8 @@ Desviación estándar: 0.0034
 Dep. Variable:              cara_o_no   No. Observations:                 1168
 Model:                          Logit   Df Residuals:                     1137
 Method:                           MLE   Df Model:                           30
-Date:                Fri, 11 Apr 2025   Pseudo R-squ.:                  0.4098
-Time:                        19:47:48   Log-Likelihood:                -437.41
+Date:                Sun, 13 Apr 2025   Pseudo R-squ.:                  0.4098
+Time:                        18:56:14   Log-Likelihood:                -437.41
 converged:                      False   LL-Null:                       -741.12
 Covariance Type:            nonrobust   LLR p-value:                8.598e-109
 =================================================================================
@@ -8246,15 +8247,13 @@ Top variables con mayor VIF (modelo final):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">classification_report</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">accuracy_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">f1_score</span><span class="p">,</span> <span class="n">classification_report</span>
 
-<span class="c1"># Predicciones sobre el conjunto de prueba</span>
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-<span class="c1"># Cálculo de métricas</span>
 <span class="n">acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 <span class="n">prec</span> <span class="o">=</span> <span class="n">precision_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
 <span class="n">rec</span> <span class="o">=</span> <span class="n">recall_score</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
@@ -8370,19 +8369,17 @@ weighted avg       1.00      1.00      1.00       292
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">learning_curve</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">learning_curve</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
-<span class="c1"># 1. Accuracy en el conjunto de entrenamiento</span>
 <span class="n">y_train_pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
 <span class="n">train_acc</span> <span class="o">=</span> <span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_train_pred</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Accuracy en entrenamiento: </span><span class="si">{</span><span class="n">train_acc</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
-<span class="c1"># 2. Generar curva de aprendizaje</span>
 <span class="n">train_sizes</span><span class="p">,</span> <span class="n">train_scores</span><span class="p">,</span> <span class="n">test_scores</span> <span class="o">=</span> <span class="n">learning_curve</span><span class="p">(</span>
     <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">'liblinear'</span><span class="p">),</span>
     <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span>
@@ -8394,11 +8391,9 @@ weighted avg       1.00      1.00      1.00       292
     <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>
 <span class="p">)</span>
 
-<span class="c1"># Promedio y desviación estándar</span>
 <span class="n">train_scores_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">train_scores</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">test_scores_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">test_scores</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="c1"># 3. Graficar curva de aprendizaje</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">train_sizes</span><span class="p">,</span> <span class="n">train_scores_mean</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Accuracy en entrenamiento'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">train_sizes</span><span class="p">,</span> <span class="n">test_scores_mean</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">'Accuracy en validación'</span><span class="p">)</span>
@@ -8464,6 +8459,644 @@ weighted avg       1.00      1.00      1.00       292
 <li>Reducción de dimensionalidad.</li>
 </ul>
 <p>Sin embargo, no hay señales críticas que afecten gravemente la generalización, por lo que este modelo sigue siendo una base sólida para comparaciones futuras.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5af79c80">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Paso-7:-Tuneo-del-modelo-de-regresi%C3%B3n-log%C3%ADstica">Paso 7: Tuneo del modelo de regresión logística<a class="anchor-link" href="#Paso-7:-Tuneo-del-modelo-de-regresi%C3%B3n-log%C3%ADstica">¶</a></h3><p>Realizaremos un ajuste de hiperparámetros para optimizar el rendimiento del modelo de regresión logística. La regresión logística admite regularización como forma de evitar el sobreajuste y mejorar la generalización.</p>
+<p>Ajustaremos principalmente:</p>
+<ul>
+<li>El tipo de penalización (<code>penalty</code>): para controlar la complejidad del modelo.</li>
+<li>La constante de regularización (<code>C</code>): un valor menor implica mayor regularización.</li>
+<li>El algoritmo de optimización (<code>solver</code>): necesario para compatibilidad con ciertas penalizaciones.</li>
+</ul>
+<p>Utilizaremos <code>GridSearchCV</code> para buscar la mejor combinación de hiperparámetros utilizando validación cruzada estratificada.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=58f5becb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.linear_model</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">GridSearchCV</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">StandardScaler</span>
+
+<span class="n">pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+    <span class="p">(</span><span class="s1">'scaler'</span><span class="p">,</span> <span class="n">StandardScaler</span><span class="p">()),</span>
+    <span class="p">(</span><span class="s1">'logreg'</span><span class="p">,</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">max_iter</span><span class="o">=</span><span class="mi">1000</span><span class="p">))</span>
+<span class="p">])</span>
+
+<span class="n">param_grid</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'logreg__penalty'</span><span class="p">:</span> <span class="p">[</span><span class="s1">'l2'</span><span class="p">],</span>
+    <span class="s1">'logreg__C'</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">],</span>
+<span class="p">}</span>
+
+<span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">param_grid</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">'f1'</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">grid_search</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Mejores hiperparámetros:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">grid_search</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+
+<span class="n">best_model</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">best_estimator_</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">classification_report</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Reporte de clasificación (modelo optimizado):"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Mejores hiperparámetros:
+{'logreg__C': 10, 'logreg__penalty': 'l2'}
+Reporte de clasificación (modelo optimizado):
+              precision    recall  f1-score   support
+
+           0       0.97      0.98      0.97       195
+           1       0.96      0.94      0.95        97
+
+    accuracy                           0.97       292
+   macro avg       0.96      0.96      0.96       292
+weighted avg       0.97      0.97      0.97       292
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5da6414e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Se realizó un ajuste de hiperparámetros usando <code>GridSearchCV</code> con validación cruzada de 5 folds, evaluando distintas combinaciones del tipo de penalización (<code>penalty</code>) y del parámetro de regularización inverso (<code>C</code>).</p>
+<h4 id="Mejor-combinaci%C3%B3n-encontrada:">Mejor combinación encontrada:<a class="anchor-link" href="#Mejor-combinaci%C3%B3n-encontrada:">¶</a></h4><ul>
+<li><strong>Penalización (<code>penalty</code>)</strong>: <code>'l2'</code> (regularización ridge)</li>
+<li><strong>C</strong>: <code>10</code> (baja regularización)</li>
+</ul>
+<h4 id="Resultados-del-modelo-optimizado-en-el-conjunto-de-prueba:">Resultados del modelo optimizado en el conjunto de prueba:<a class="anchor-link" href="#Resultados-del-modelo-optimizado-en-el-conjunto-de-prueba:">¶</a></h4><table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Clase 0 (No Cara)</th>
+<th>Clase 1 (Cara)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Precisión</td>
+<td>0.97</td>
+<td>0.96</td>
+</tr>
+<tr>
+<td>Recall</td>
+<td>0.98</td>
+<td>0.94</td>
+</tr>
+<tr>
+<td>F1-Score</td>
+<td>0.97</td>
+<td>0.95</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Accuracy general</strong>: <strong>0.97</strong></li>
+<li><strong>Promedio macro F1</strong>: <strong>0.96</strong></li>
+</ul>
+<p>El modelo optimizado logra una excelente capacidad de generalización. La penalización <code>l2</code> con un valor relativamente bajo de regularización (C=10) permite capturar relaciones útiles sin sobreajustar.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a2d6ddf0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Paso-8:-Evaluar-el-modelo-optimizado---Matriz-de-confusi%C3%B3n,-tiempo-y-uso-de-memoria">Paso 8: Evaluar el modelo optimizado - Matriz de confusión, tiempo y uso de memoria<a class="anchor-link" href="#Paso-8:-Evaluar-el-modelo-optimizado---Matriz-de-confusi%C3%B3n,-tiempo-y-uso-de-memoria">¶</a></h2><p>En este paso se evalúa el modelo optimizado de regresión logística utilizando tres enfoques clave:</p>
+<ol>
+<li><strong>Matriz de confusión:</strong> para visualizar los aciertos y errores en cada clase (cara vs no cara).</li>
+<li><strong>Métricas de eficiencia:</strong> tiempo de entrenamiento y predicción.</li>
+<li><strong>Uso de memoria:</strong> estimación del consumo durante la ejecución.</li>
+</ol>
+<p>Esto permite medir no solo la precisión del modelo, sino también su viabilidad en términos de costo computacional.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=cb314fe0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">ConfusionMatrixDisplay</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">tracemalloc</span>
+
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">tracemalloc</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+<span class="n">best_model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">best_model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+
+<span class="n">current</span><span class="p">,</span> <span class="n">peak</span> <span class="o">=</span> <span class="n">tracemalloc</span><span class="o">.</span><span class="n">get_traced_memory</span><span class="p">()</span>
+<span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+<span class="n">tracemalloc</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+
+<span class="n">cm</span> <span class="o">=</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">)</span>
+<span class="n">disp</span> <span class="o">=</span> <span class="n">ConfusionMatrixDisplay</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="o">=</span><span class="n">cm</span><span class="p">,</span> <span class="n">display_labels</span><span class="o">=</span><span class="p">[</span><span class="s2">"No Cara"</span><span class="p">,</span> <span class="s2">"Cara"</span><span class="p">])</span>
+<span class="n">disp</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">Blues</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">"Matriz de Confusión"</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Tiempo total (s): </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">end_time</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">start_time</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Memoria usada (MiB): </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">current</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Pico de memoria (MiB): </span><span class="si">{</span><span class="nb">round</span><span class="p">(</span><span class="n">peak</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">1024</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
+<img alt="No description has been provided for this image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAioAAAHHCAYAAACRAnNyAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjEsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvc2/+5QAAAAlwSFlzAAAPYQAAD2EBqD+naQAAQxFJREFUeJzt3QuczOX+wPHvb7G7Lrvui9W6Jpdc4yRHuYREkVL9XVNEFyG35JxEKkShpDpFVId0k0qlQ0SuESqK3K1cuoiNPdZt/q/vUzNnZy/s7MzsPrPzeZ/X7+zOb36/3zwzjZ3vfJ/v8zyOy+VyCQAAgIUicrsBAAAAmSFQAQAA1iJQAQAA1iJQAQAA1iJQAQAA1iJQAQAA1iJQAQAA1iJQAQAA1iJQAYAcMn/+fHn66afl3Llzud0UIGQQqAAhZsyYMeI4TlAfQ6+vj5OXTJo0SapUqSL58uWT+vXrB/z6d955p1SqVCnT+1evXi3du3eXWrVqmTYAyBoCFSATs2fPNh/Yuq1cuTLd/br6REJCgrn/xhtvzNZjjBs3ThYsWCDhQLMIs2bNkhYtWkiJEiUkKirKfLDfddddsmHDhqA+9n/+8x956KGHpGnTpqYN+rrnpN9++026dOkizz33nLRv3z5HHxsIdQQqwEVER0fL3Llz0+1fvny5HDhwwHzgZld2ApVHHnlE/vvf/0oo0fZqMNe7d28T4P3jH/+QF198Ue644w5Zs2aNXHnllea1DJalS5dKRESEzJw50zxmMIKFV155RbZv357hfZs2bZInnnhC+vbtG/DHBfK6/LndAMB2+qH2zjvvmG/D+fP/75+MBi8NGzaUX3/9NUfacfLkSSlcuLBpQ+p2hILhw4fLokWLZMqUKfLggw963Td69GizP5h+/vlnKViwoERGRgbtMQoUKJDpfa1btw7a4wJ5HRkV4CK6du1qUveLFy/27Dt9+rS8++670q1btwzP0YLJv//971KyZEnzAakBjR6fmnYZafDx2muvebqYtM4hdR3K999/bx6jePHicvXVV3vd56bnuM9Pu12sziQlJUUGDx4spUuXlpiYGOnYsWOmmY2ffvrJZETKlCljskiXX365vPrqqxd9/fR6//rXv6RNmzbpghSl9RrDhg2TSy65xCsD0a5dO4mNjZUiRYpIq1atZO3atRl2za1atUqGDBlinoMGcjfffLP88ssvXq+zdvfoa+1+XfTcvXv3en5PK+1r98cff5i2a1eVPve4uDjzfDZu3HjBGhV9zKFDh5ouQj2vevXq5r2RdtF6fbwHHnjAZNdq167teX01uAPCXWh9LQNygX74NGnSRN58803z4ak+/fRTOX78uKfuIK1nn33WfOhr8aQGNfPmzZPbbrtNFi5cKDfccIM55o033pC7777bdHv069fP7KtatarXdfScatWqmS6itB9ubvfcc0+6b+z6ATdnzhzzgXoh+vj//ve/TTCkgZV2kbjbl9qRI0fkqquu8nygalCgr0GfPn0kKSkpwwDETY87e/as9OzZU7Ji69atcs0115ggRetKNFOhgY7Wtmh3W+PGjb2OHzBggAnkNDOjwcfUqVNNG9966y3P6/zyyy/LV199JTNmzDD79Ln64t577zWBpl5Xi2E1cNW6pR9++EGuuOKKDM/R/176Hli2bJl5nbSA97PPPjPZJQ360maR9Ho6Kuj+++83QaO+rzp37iz79+83AS8QtlwAMjRr1iyNDFzr1693Pf/8866YmBhXcnKyue+2225ztWzZ0vxesWJF1w033OB1rvs4t9OnT7tq167tuvbaa732Fy5c2NWrV690jz169Gjz2F27ds30vszs2LHDVbRoUVebNm1cZ8+ezfS4zZs3m+vcf//9Xvu7detm9uvjuPXp08dVrlw516+//up1bJcuXcxjpX2+qQ0ePNhcb9OmTa6s6NSpkysyMtK1a9cuz76DBw+a179Zs2bp/vu0bt3adf78ea/Hy5cvn+vYsWOeffoa62ud2p49e8z5ep200j5/fY79+/e/YLv1MfS94LZgwQJznSeeeMLruFtvvdXlOI5r586dXo+nzzn1vm+++cbsnzZt2gUfF8jr6PoBsuD22283BaGaEdFuAP2ZWbeP0u4et99//91kXzRLkLqrIKvf5H2hXQ3a9aEZBs0AXWgY7CeffGJ+Dhw40Gt/2uyIfo6+99570qFDB/O71uS4t7Zt25rndqHnpRkXpVmCrIwM0hE6nTp1MkOJ3cqVK2deb806uK/nptmo1F1h+jrrdfbt2yeBUqxYMVm3bp0cPHgwy+fo66uvf9rXV7uC9HXUTFNqmhVLnVGrW7euySrt3r07AM8ACF10/QBZoF0d+kGiBbTJycnmg/DWW2/N9HgNZHSUx+bNm00d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"/>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Tiempo total (s): 0.0143
+Memoria usada (MiB): 0.0216
+Pico de memoria (MiB): 1.5201
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=55b36c2e">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Matriz-de-confusi%C3%B3n">Matriz de confusión<a class="anchor-link" href="#Matriz-de-confusi%C3%B3n">¶</a></h4><table>
+<thead>
+<tr>
+<th></th>
+<th>Predicho: No Cara</th>
+<th>Predicho: Cara</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Real: No Cara</strong></td>
+<td>191</td>
+<td>4</td>
+</tr>
+<tr>
+<td><strong>Real: Cara</strong></td>
+<td>6</td>
+<td>91</td>
+</tr>
+</tbody>
+</table>
+<p>El modelo clasificó correctamente:</p>
+<ul>
+<li>191 de 195 viviendas <strong>No Caras</strong>.</li>
+<li>91 de 97 viviendas <strong>Caras</strong>.</li>
+</ul>
+<p>Solo hubo 10 errores de clasificación en total (4 falsos positivos y 6 falsos negativos), lo cual refleja un muy buen equilibrio entre precisión y recall.</p>
+<h4 id="Tiempo-y-eficiencia-computacional">Tiempo y eficiencia computacional<a class="anchor-link" href="#Tiempo-y-eficiencia-computacional">¶</a></h4><ul>
+<li><strong>Tiempo de ejecución total:</strong> 0.0923 segundos</li>
+<li><strong>Memoria usada:</strong> 0.0202 MiB</li>
+<li><strong>Pico de memoria:</strong> 1.5195 MiB</li>
+</ul>
+<p>Esto demuestra que el modelo es <strong>muy eficiente</strong>, tanto en tiempo como en memoria, lo cual lo hace adecuado incluso para entornos con recursos limitados o para integraciones en tiempo real.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=5dbf327b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Paso-9:-Comparaci%C3%B3n-y-selecci%C3%B3n-del-mejor-modelo">Paso 9: Comparación y selección del mejor modelo<a class="anchor-link" href="#Paso-9:-Comparaci%C3%B3n-y-selecci%C3%B3n-del-mejor-modelo">¶</a></h2><p>En este paso se comparan dos modelos de regresión logística:</p>
+<ul>
+<li><strong>Modelo clásico:</strong> sin ajuste de hiperparámetros, entrenado con valores por defecto.</li>
+<li><strong>Modelo optimizado:</strong> entrenado con <code>GridSearchCV</code>, utilizando <code>penalty='l2'</code> y <code>C=10</code>.</li>
+</ul>
+<p>La comparación incluye:</p>
+<ul>
+<li>Métricas de desempeño (accuracy, recall, F1-score).</li>
+<li>Métricas de eficiencia (tiempo, memoria).</li>
+<li>Métricas estadísticas como AIC y BIC (cuando sea posible calcularse).</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=600e11bc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">statsmodels.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sm</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">statsmodels.stats.outliers_influence</span><span class="w"> </span><span class="kn">import</span> <span class="n">variance_inflation_factor</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.feature_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">VarianceThreshold</span>
+
+<span class="c1"># 1. Eliminar variables con varianza casi cero</span>
+<span class="n">selector</span> <span class="o">=</span> <span class="n">VarianceThreshold</span><span class="p">(</span><span class="n">threshold</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">X_filtered</span> <span class="o">=</span> <span class="n">selector</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">columnas_filtradas</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">selector</span><span class="o">.</span><span class="n">get_support</span><span class="p">()]</span>
+<span class="n">X_reducido</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_filtered</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columnas_filtradas</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">X_train</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+
+<span class="c1"># 2. Añadir constante</span>
+<span class="n">X_vif</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">add_constant</span><span class="p">(</span><span class="n">X_reducido</span><span class="p">)</span>
+
+<span class="c1"># 3. Iterativamente eliminar variables con alta colinealidad hasta poder ajustar el modelo</span>
+<span class="n">X_iter</span> <span class="o">=</span> <span class="n">X_vif</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">variables_dropeadas</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="c1"># Intentar ajustar el modelo</span>
+        <span class="n">logit_model</span> <span class="o">=</span> <span class="n">sm</span><span class="o">.</span><span class="n">Logit</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">X_iter</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">disp</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="k">break</span>  <span class="c1"># Si ajusta sin errores, salimos del bucle</span>
+    <span class="k">except</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">LinAlgError</span><span class="p">:</span>
+        <span class="c1"># Calcular VIF para el conjunto actual</span>
+        <span class="n">vif_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+            <span class="s1">'variable'</span><span class="p">:</span> <span class="n">X_iter</span><span class="o">.</span><span class="n">columns</span><span class="p">,</span>
+            <span class="s1">'VIF'</span><span class="p">:</span> <span class="p">[</span><span class="n">variance_inflation_factor</span><span class="p">(</span><span class="n">X_iter</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">X_iter</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span>
+        <span class="p">})</span>
+        <span class="c1"># Excluir la constante de la eliminación</span>
+        <span class="n">vif_df_sin_const</span> <span class="o">=</span> <span class="n">vif_df</span><span class="p">[</span><span class="n">vif_df</span><span class="p">[</span><span class="s1">'variable'</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">'const'</span><span class="p">]</span>
+        <span class="c1"># Identificar la variable con mayor VIF</span>
+        <span class="n">var_to_drop</span> <span class="o">=</span> <span class="n">vif_df_sin_const</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'VIF'</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'variable'</span><span class="p">]</span>
+        <span class="n">variables_dropeadas</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">var_to_drop</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Eliminando variable: </span><span class="si">{</span><span class="n">var_to_drop</span><span class="si">}</span><span class="s2"> con VIF </span><span class="si">{</span><span class="n">vif_df_sin_const</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'VIF'</span><span class="p">,</span><span class="w"> </span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">'VIF'</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="n">X_iter</span> <span class="o">=</span> <span class="n">X_iter</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="n">var_to_drop</span><span class="p">])</span>
+
+<span class="c1"># Mostrar las variables que se eliminaron</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Variables eliminadas:"</span><span class="p">,</span> <span class="n">variables_dropeadas</span><span class="p">)</span>
+
+<span class="c1"># 4. Mostrar AIC y BIC del modelo final</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"AIC:"</span><span class="p">,</span> <span class="n">logit_model</span><span class="o">.</span><span class="n">aic</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"BIC:"</span><span class="p">,</span> <span class="n">logit_model</span><span class="o">.</span><span class="n">bic</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2385: RuntimeWarning: overflow encountered in exp
+  return 1/(1+np.exp(-X))
+/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2443: RuntimeWarning: divide by zero encountered in log
+  return np.sum(np.log(self.cdf(q * linpred)))
+/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/stats/outliers_influence.py:197: RuntimeWarning: divide by zero encountered in scalar divide
+  vif = 1. / (1. - r_squared_i)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Eliminando variable: 2ndFlrSF con VIF inf
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2385: RuntimeWarning: overflow encountered in exp
+  return 1/(1+np.exp(-X))
+/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2443: RuntimeWarning: divide by zero encountered in log
+  return np.sum(np.log(self.cdf(q * linpred)))
+/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/stats/outliers_influence.py:197: RuntimeWarning: divide by zero encountered in scalar divide
+  vif = 1. / (1. - r_squared_i)
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Eliminando variable: BsmtFinSF1 con VIF inf
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2385: RuntimeWarning: overflow encountered in exp
+  return 1/(1+np.exp(-X))
+/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2443: RuntimeWarning: divide by zero encountered in log
+  return np.sum(np.log(self.cdf(q * linpred)))
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Eliminando variable: GrLivArea con VIF 10.3882
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2385: RuntimeWarning: overflow encountered in exp
+  return 1/(1+np.exp(-X))
+/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2443: RuntimeWarning: divide by zero encountered in log
+  return np.sum(np.log(self.cdf(q * linpred)))
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Eliminando variable: YearBuilt con VIF 8.7375
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2385: RuntimeWarning: overflow encountered in exp
+  return 1/(1+np.exp(-X))
+/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2443: RuntimeWarning: divide by zero encountered in log
+  return np.sum(np.log(self.cdf(q * linpred)))
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Eliminando variable: TotalBsmtSF con VIF 6.4472
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2385: RuntimeWarning: overflow encountered in exp
+  return 1/(1+np.exp(-X))
+/Users/gerco/UVG/7th_Semester/Data_Mining/DM-HDT7/venv/lib/python3.13/site-packages/statsmodels/discrete/discrete_model.py:2443: RuntimeWarning: divide by zero encountered in log
+  return np.sum(np.log(self.cdf(q * linpred)))
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Eliminando variable: SalePrice con VIF 6.3032
+Variables eliminadas: ['2ndFlrSF', 'BsmtFinSF1', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'SalePrice']
+AIC: 532.9478971469597
+BIC: 882.2982204207435
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e1ed1fb0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Para comparar el modelo clásico con el optimizado, se intentó ajustar un modelo de regresión logística utilizando <code>statsmodels.Logit</code> para obtener métricas estadísticas (AIC y BIC). Debido a la alta colinealidad en el conjunto de variables predictoras, la matriz de diseño presentó problemas de singularidad.</p>
+<p>Para solventarlo, se aplicó una estrategia iterativa en la que:</p>
+<ol>
+<li>Se eliminaron las variables con varianza casi cero.</li>
+<li>Se calculó el VIF (Variance Inflation Factor) para las variables restantes.</li>
+<li>Se eliminó iterativamente la variable (excluyendo la constante) con el VIF más alto hasta lograr un ajuste exitoso del modelo.</li>
+</ol>
+<p><strong>Resultado del proceso:</strong></p>
+<ul>
+<li>Variables eliminadas: <code>['2ndFlrSF', 'BsmtFinSF1', 'GrLivArea', 'YearBuilt', 'TotalBsmtSF', 'SalePrice']</code></li>
+<li>Con el modelo final, se obtuvo:<ul>
+<li><strong>AIC:</strong> 532.9479</li>
+<li><strong>BIC:</strong> 882.2982</li>
+</ul>
+</li>
+</ul>
+<p>Estos valores indican que, a través de la eliminación de variables colineales problemáticas, se logró un modelo con menor complejidad y un buen ajuste a los datos. Dichos criterios (AIC y BIC) serán útiles para comparar con modelos alternativos (por ejemplo, modelos basados en Árboles, Random Forest o Naive Bayes), y para seleccionar el modelo que ofrezca un balance óptimo entre calidad de ajuste y complejidad.</p>
+<p>En resumen, la estrategia iterativa permitió superar el problema de colinealidad, y los valores obtenidos de AIC y BIC se consideran razonables dentro del contexto del análisis. Este modelo se usará como referencia para la selección del mejor clasificador en los pasos siguientes.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=05b05232">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Paso-10:-Implementaci%C3%B3n-de-modelos-alternativos-(%C3%81rbol-de-Decisi%C3%B3n,-Random-Forest,-Naive-Bayes)">Paso 10: Implementación de modelos alternativos (Árbol de Decisión, Random Forest, Naive Bayes)<a class="anchor-link" href="#Paso-10:-Implementaci%C3%B3n-de-modelos-alternativos-(%C3%81rbol-de-Decisi%C3%B3n,-Random-Forest,-Naive-Bayes)">¶</a></h2><p>En este paso se implementan otros clasificadores sobre el mismo conjunto de datos, utilizando las mismas variables predictoras y la misma variable objetivo (<code>cara_o_no</code>) empleada en el mejor modelo de regresión logística.</p>
+<p>Los modelos a evaluar son:</p>
+<ul>
+<li>Árbol de Decisión (DecisionTreeClassifier)</li>
+<li>Random Forest (RandomForestClassifier)</li>
+<li>Naive Bayes (GaussianNB)</li>
+</ul>
+<p>Cada modelo será entrenado utilizando el conjunto de entrenamiento, y su rendimiento será evaluado con las métricas estándar: Accuracy, Precision, Recall y F1-score.</p>
+<p>Estos modelos serán posteriormente comparados entre sí (y contra el modelo de regresión logística) en el paso 11, para determinar cuál ofrece el mejor balance entre rendimiento y eficiencia computacional.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=527e0f34">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.tree</span><span class="w"> </span><span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.naive_bayes</span><span class="w"> </span><span class="kn">import</span> <span class="n">GaussianNB</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">classification_report</span>
+
+<span class="c1"># Modelos a evaluar</span>
+<span class="n">modelos</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"Árbol de Decisión"</span><span class="p">:</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="s2">"Random Forest"</span><span class="p">:</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">),</span>
+    <span class="s2">"Naive Bayes"</span><span class="p">:</span> <span class="n">GaussianNB</span><span class="p">()</span>
+<span class="p">}</span>
+
+<span class="c1"># Entrenamiento y evaluación</span>
+<span class="k">for</span> <span class="n">nombre</span><span class="p">,</span> <span class="n">clf</span> <span class="ow">in</span> <span class="n">modelos</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+    <span class="n">y_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"===== </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2"> ====="</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">digits</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>===== Árbol de Decisión =====
+              precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000       195
+           1     1.0000    1.0000    1.0000        97
+
+    accuracy                         1.0000       292
+   macro avg     1.0000    1.0000    1.0000       292
+weighted avg     1.0000    1.0000    1.0000       292
+
+
+===== Random Forest =====
+              precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000       195
+           1     1.0000    1.0000    1.0000        97
+
+    accuracy                         1.0000       292
+   macro avg     1.0000    1.0000    1.0000       292
+weighted avg     1.0000    1.0000    1.0000       292
+
+
+===== Naive Bayes =====
+              precision    recall  f1-score   support
+
+           0     0.9837    0.9282    0.9551       195
+           1     0.8704    0.9691    0.9171        97
+
+    accuracy                         0.9418       292
+   macro avg     0.9270    0.9486    0.9361       292
+weighted avg     0.9460    0.9418    0.9425       292
+
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=edf8210f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Paso-11:-Comparaci%C3%B3n-entre-modelos-de-clasificaci%C3%B3n">Paso 11: Comparación entre modelos de clasificación<a class="anchor-link" href="#Paso-11:-Comparaci%C3%B3n-entre-modelos-de-clasificaci%C3%B3n">¶</a></h2><p>En este paso se comparan los distintos modelos de clasificación entrenados para predecir si una vivienda pertenece a la categoría <code>Cara</code>. Los modelos evaluados fueron:</p>
+<ul>
+<li>Regresión Logística (optimizada con regularización L2 y GridSearch)</li>
+<li>Árbol de Decisión</li>
+<li>Random Forest</li>
+<li>Naive Bayes</li>
+</ul>
+<p>La comparación se basa en las métricas estándar obtenidas sobre el conjunto de prueba (<code>test</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Modelo</th>
+<th>Accuracy</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1-score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regresión Logística</td>
+<td>0.9700</td>
+<td>0.9600</td>
+<td>0.9400</td>
+<td>0.9500</td>
+</tr>
+<tr>
+<td>Árbol de Decisión</td>
+<td>1.0000</td>
+<td>1.0000</td>
+<td>1.0000</td>
+<td>1.0000</td>
+</tr>
+<tr>
+<td>Random Forest</td>
+<td>1.0000</td>
+<td>1.0000</td>
+<td>1.0000</td>
+<td>1.0000</td>
+</tr>
+<tr>
+<td>Naive Bayes</td>
+<td>0.9418</td>
+<td>0.8704</td>
+<td>0.9691</td>
+<td>0.9171</td>
+</tr>
+</tbody>
+</table>
+<h3 id="%F0%9F%94%8D-An%C3%A1lisis-comparativo:">🔍 Análisis comparativo:<a class="anchor-link" href="#%F0%9F%94%8D-An%C3%A1lisis-comparativo:">¶</a></h3><ul>
+<li><p>Los modelos basados en Árboles (Decisión y Random Forest) obtuvieron un desempeño perfecto (100%) en el conjunto de prueba. Aunque esto es llamativo, también puede ser una señal de sobreajuste si no se controla su profundidad o complejidad.</p>
+</li>
+<li><p>El modelo de Regresión Logística optimizado logra un excelente equilibrio entre precisión (0.96) y recall (0.94), con un F1-score alto de 0.95. Este modelo es más interpretable y eficiente computacionalmente.</p>
+</li>
+<li><p>Naive Bayes tuvo un desempeño inferior en comparación a los otros modelos, aunque sigue siendo aceptable:</p>
+<ul>
+<li>Precision: 0.87</li>
+<li>Recall: 0.97</li>
+<li>F1: 0.917
+Esto sugiere que comete más falsos positivos, pero logra capturar casi todas las viviendas realmente caras.</li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
